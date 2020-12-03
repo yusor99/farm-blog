@@ -10,7 +10,7 @@
   z-index: 5;
   width: 90%;
   height: 100%;
-  box-shadow: 5px 5px 5px #dad9d9;
+  box-shadow: 1px 1px 5px #dad9d9;
   -webkit-animation: backInLeft 1.5s;
   animation: backInLeft 1s;
   -webkit-animation-timing-function: ease-out;
@@ -63,6 +63,7 @@
     font-weight: 400;
     font-size: 25px;
     margin: 5px 0px 20px 0px;
+    max-width: 400px;
   }
   .cards {
     display: flex;
@@ -70,6 +71,7 @@
     margin: auto;
     justify-content: center;
     align-items: center;
+    margin-top: 200px;
   }
   .sider-mobile {
     display: block;
