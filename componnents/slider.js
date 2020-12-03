@@ -2,11 +2,11 @@ const Slider = () => {
   return (
     <>
       <section className="home-cover">
-        <img src="/img/cover.png" />
+        <img src="/img/cover.png" alt="cover" />
         <div className="overlay">
           <div className="container">
             <section className="head">
-            <small style={{ color: "gray", fontWeight: 600 }}>
+              <small style={{ color: "gray", fontWeight: 600 }}>
                 AGRICULTURE FOR EVERYONE
               </small>
               <p className="des">

@@ -3,7 +3,7 @@ const Labtop = () => {
     <div className="container">
       <div className="navbar">
         <div className="logo">
-          <img src="img/black.png" />
+          <img src="img/black.png" alt="logo" />
         </div>
         <ul className="nav-ul">
           <li>Home</li>

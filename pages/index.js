@@ -5,7 +5,12 @@ const { default: NavBar } = require("../componnents/navbar");
 
 const Home = () => {
   return (
-    <>
+    <html lang="en">
+      <head>
+        <title>Online Farm</title>
+        Do
+        <meta name="description" content="This is online farm" />
+      </head>
       <NavBar />
       <Slider />
       <div className="info">
@@ -23,7 +28,7 @@ const Home = () => {
           <Card />
         </div>
       </div>
-    </>
+    </html>
   );
 };
 export default Home;
