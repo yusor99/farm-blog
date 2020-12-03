@@ -1,0 +1,126 @@
+.activefalse {
+  display: none;
+}
+.activetrue {
+  display: block;
+  list-style: none;
+  color: rgb(126, 125, 125);
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  z-index: 5;
+  width: 90%;
+  height: 100%;
+  box-shadow: 5px 5px 5px #dad9d9;
+  -webkit-animation: backInLeft 1.5s;
+  animation: backInLeft 1s;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+}
+.trigger {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 10;
+  font-size: 30px;
+  margin: 2px 2px 5px;
+  -webkit-animation-name: twistInLeft 0.5s;
+  animation-name: twistInLeft 0.5s;
+  animation: twistInLeft 0.5s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+}
+.trigger-div {
+  z-index: 100;
+  width: 100%;
+  height: 25px;
+  padding-bottom: 38px;
+  background-color: rgba(238, 235, 235, 0.295);
+}
+.activetrue li {
+  margin-bottom: 50px;
+}
+.login-btn-mobile {
+  background-color: #e8991d;
+  color: rgb(255, 255, 255);
+  border-radius: 16px;
+  width: 90px;
+  height: 35px;
+  overflow: hidden;
+  outline: none;
+  border: none;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.login-btn-mobile:active {
+  border: none;
+  color: #e8991d;
+  background-color: white;
+}
+@media (max-width: 900px) {
+  .des {
+    color: white;
+    font-weight: 400;
+    font-size: 25px;
+    margin: 5px 0px 20px 0px;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .sider-mobile {
+    display: block;
+  }
+  .fullScreenNavBar {
+    display: none;
+  }
+}
+@keyframes twistInLeft {
+  0% {
+    opacity: 0;
+    transform-origin: 50% 50%;
+    transform: scale(1) translateX(-100%);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateY(0px) rotate(-360deg) scale(1);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px) rotate(0deg) scale(1);
+  }
+}
+@-webkit-keyframes backInLeft {
+  0% {
+    transform: translateX(-2000px);
+  }
+
+  80% {
+    transform: translateX(0px);
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes backInLeft {
+  0% {
+    transform: translateX(-2000px);
+  }
+
+  80% {
+    transform: translateX(0px);
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
