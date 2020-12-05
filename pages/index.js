@@ -12,10 +12,10 @@ const Home = () => {
         <meta name="description" content="This is online farm" />
       </head>
       <NavBar />
-      <Slider />
+      <Slider  />
       <div className="info">
         <div className="container ">
-          <div style={{ position: "absolute" }}>
+          <div>
             <h2>ABOUT ZOJIE'S FARM</h2>
             <p>
               We are constantly in search for innovative solutions that makes
